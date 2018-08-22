@@ -6,7 +6,7 @@
 2. Write a program that uses mathematical operations for meteorological calculations, uses interactive read for data input and uses standard output for reporting results
 3. Solve basic meteorological problems using the Fortran programming language
 
-**Due 30 September 2018 by 1:30 pm**
+**Due 30 August 2018 by 1:30 pm**
 
 _Due Online_
 
