@@ -120,20 +120,19 @@ Pot. Temp. (K): 302.52805
 
 3. Having the temperature or potential temperature is great, but for many thermodynamic calculations we want to account for the fact that there is some amount of moisture in the atmosphere and that plays a crucial role in understanding the stability of the lower part of the atmosphere. Therefore we want to calculate the virtual potential temperature, θv, to account for the presence of moisture using the following equation, to account for the presence of moisture using the following equation
 
-θv=(1+0.61q)θ
+θ<sub>v</sub>=(1+0.61q)θ
 
 where θ
  is the potential temperature and
 q
  is the specific humidity, defined as
 
-q=rv1+rv
+q=r<sub>v</sub>/(1+r<sub>v</sub>)
 
-where rv
+where r<sub>v</sub>
  is the dimensionless water vapor mixing ratio.
 
-Write a program to computer the virtual potential temperature from a given temperature in Celsius, for a given pressure value in hPa, and mixing ratio in g/kg. Additionally, compute the difference between the potential temperature and the virtual potential temperature. The output of the program should be the temperature in Kelvin, the specific humidity, the potential temperature in Kelvin, the virtual potential temperature in Kelvin, and the difference of the potential from virtual potential temperature (i.e., θv−θ
-).
+Write a program to computer the virtual potential temperature from a given temperature in Celsius, for a given pressure value in hPa, and mixing ratio in g/kg. Additionally, compute the difference between the potential temperature and the virtual potential temperature. The output of the program should be the temperature in Kelvin, the specific humidity, the potential temperature in Kelvin, the virtual potential temperature in Kelvin, and the difference of the potential from virtual potential temperature (i.e., θ<sub>v</sub>−θ).
 
 Program Name: **virtual\_potemp.for**
 
@@ -163,7 +162,7 @@ Temperature (K): 303.14999
 Specific Humidity: 7.93650839E-03
 Pot. Temp. (K): 302.80426
 Virtual Pot. Temp. (K): 304.27023
-Diff. Theta from Theta\_v (K): 1.4659729
+Diff. Theta from Theta_v (K): 1.4659729
 >>>
 ```
 
