@@ -33,7 +33,7 @@
       READ(*,*) P
      
 *     Equation for computing potential temp using Kelvin temp.
-      PT = K*(1000/P)**(0.286)
+      PT = K*(1000/P)**(0.23)
 
       PRINT *, 'Temperature (K):', K
       PRINT *, 'Pressure (hPa):', P
