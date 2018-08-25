@@ -28,6 +28,12 @@
       C = K-273.15
       PRINT *, C
 
+      F = (9.0/5.0)*C+32
+
+      PRINT *, 'Tk', K
+      PRINT *, 'Tc' , C
+      PRINT *, 'Tf' , F
+
 *     Equation to convert from F to C
 *      tmpc = (tf-32)*(5.0/9.0)
 
