@@ -24,7 +24,7 @@
 *                                                          *
 ************************************************************
 
-      REAL C, K, P
+      REAL C, K, P, M
 
       PRINT *, 'Enter a temperature in Celsius'
       READ(*,*) C
@@ -35,7 +35,8 @@
       PRINT *, 'Enter a pressure in hPa'
       READ(*,*) P
 
-      
+      PRINT *, 'Enter a mixing ratio in g/kg'
+      READ(*,*) M 
 
 
       END
