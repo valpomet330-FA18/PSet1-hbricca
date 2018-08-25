@@ -24,7 +24,7 @@
 *                                                          *
 ************************************************************
 
-      REAL C, K, P, M
+      REAL C, K, P, R, q
 
       PRINT *, 'Enter a temperature in Celsius'
       READ(*,*) C
@@ -36,7 +36,12 @@
       READ(*,*) P
 
       PRINT *, 'Enter a mixing ratio in g/kg'
-      READ(*,*) M 
+      READ(*,*) R 
 
+*     Equation to calculate specific humidity.
+      q = R/(1+R)      
+
+      PRINT *, 'Tk', K
+      PRINT *, 'q',
 
       END
