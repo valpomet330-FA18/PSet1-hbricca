@@ -22,21 +22,23 @@
       
       PRINT *, 'What is the temperature in Kelvin?'
       READ(*,*) K
+      
 
 *     Equation to convert from K to C
       C = K-273.15
+      PRINT *, C
 
 *     Equation to convert from F to C
-      tmpc = (tf-32)*(5.0/9.0)
+*      tmpc = (tf-32)*(5.0/9.0)
 
-      print *,tmpc
-      print *, 'We should get -6.67C'
+*      print *,tmpc
+*      print *, 'We should get -6.67C'
 
 *     Equation to convert from F to K
-      tmpk = tmpc+273.15
+*      tmpk = tmpc+273.15
  
-      print *,tmpk
-      print *, 'We should 266.48K'
+*      print *,tmpk
+*      print *, 'We should 266.48K'
 
       END  
 
