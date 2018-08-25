@@ -32,5 +32,10 @@
 *     Equation to convert from C to K.
       K = C+273.15
 
+      PRINT *, 'Enter a pressure in hPa'
+      READ(*,*) P
+
+      
+
 
       END
