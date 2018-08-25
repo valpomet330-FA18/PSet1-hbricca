@@ -42,6 +42,6 @@
       q = R/(1+R)      
 
       PRINT *, 'Tk', K
-      PRINT *, 'q',
+      PRINT *, 'q', q
 
       END
