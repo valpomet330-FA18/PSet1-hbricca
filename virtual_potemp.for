@@ -44,11 +44,13 @@
 *     Equation to calculate potential temperature.
       PT = K*(1000/P)**(2.0/7.0)
 
+*     Equation to calculate virtual potential temperature.
+      V = (1+0.61*q)*PT
 
-      PRINT *, 'Tk', K
-      PRINT *, 'q', q
-      PRINT *, 'PT', PT
-
+      PRINT *, 'Temperature (K)', K
+      PRINT *, 'Specific Humidity', q
+      PRINT *, 'Potential Temp (K)', PT
+      PRINT *, 'Virtual Potential Temp (K)', V
 
 
       END
