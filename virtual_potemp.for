@@ -24,7 +24,8 @@
 *                                                          *
 ************************************************************
 
-      REAL C, K, P, R, q, PT
+      REAL C, K, P, q, PT, T
+      implicit R
 
       PRINT *, 'Enter a temperature in Celsius'
       READ(*,*) C
@@ -39,7 +40,7 @@
       READ(*,*) R 
 
 *     Equation to calculate specific humidity.
-      q = (R)/(1+R)      
+      q = R/(1+R)      
 
 *     Equation to calculate potential temperature.
       PT = K*(1000/P)**(2.0/7.0)
@@ -47,10 +48,13 @@
 *     Equation to calculate virtual potential temperature.
       V = (1+0.61*q)*PT
 
-      PRINT *, 'Temperature (K)', K
-      PRINT *, 'Specific Humidity', q
-      PRINT *, 'Potential Temp (K)', PT
-      PRINT *, 'Virtual Potential Temp (K)', V
+*     Equation to calculate difference from theta to theta_v.
+      T = V-PT
 
+      PRINT *, 'Temperature (K):', K
+      PRINT *, 'Specific Humidity:', q
+      PRINT *, 'Potential Temp (K):', PT
+      PRINT *, 'Virtual Potential Temp (K):', V
+      PRINT *, 'Diff. from Theta_v (K):', T
 
       END
