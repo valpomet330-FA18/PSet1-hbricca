@@ -24,7 +24,7 @@
 *                                                          *
 ************************************************************
 
-      REAL C, K, P, R, q
+      REAL C, K, P, R, q, PT
 
       PRINT *, 'Enter a temperature in Celsius'
       READ(*,*) C
@@ -39,9 +39,16 @@
       READ(*,*) R 
 
 *     Equation to calculate specific humidity.
-      q = R/(1+R)      
+      q = (R)/(1+R)      
+
+*     Equation to calculate potential temperature.
+      PT = K*(1000/P)**(2.0/7.0)
+
 
       PRINT *, 'Tk', K
       PRINT *, 'q', q
+      PRINT *, 'PT', PT
+
+
 
       END
